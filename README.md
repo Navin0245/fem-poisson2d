@@ -2,15 +2,25 @@
 
 This project simulates the Poisson distribution using NumPy and visualizes the solution of the Poisson equation on a 2D mesh using finite element methods. Mesh files are handled using the `meshio` library.
 
+---
+
 ## 📌 Objective
 
 Solve the 2D Poisson equation:
 
-\[
--\nabla^2 u = f \quad \text{in } \Omega
-\]
+$$
+- \nabla^2 u = f \quad \text{in } \Omega
+$$
 
-with appropriate boundary conditions, by discretizing the domain into triangular elements, assembling the global stiffness matrix, and solving the resulting linear system.
+Subject to appropriate boundary conditions, where:
+
+* $u$ is the scalar field (e.g., temperature, electric potential)
+* $f$ is a known source term
+* $\Omega$ is the domain of interest
+
+The problem is solved using the Finite Element Method (FEM) implemented in Python.
+
+---
 
 ## ⚙️ Requirements
 
@@ -68,7 +78,7 @@ python src/poisson_distribution.py
 
 Navin C Chacko
 Mechanical Engineer (FEA) | AI & ML Enthusiast
-Email: [navincchacko@gmail.com](mailto:navincchacko@gmail.com)
+Email: [navincchacko@gmail.com](mailto:navincchacko02.nc@gmail.com)
 
 ---
 
